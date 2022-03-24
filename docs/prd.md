@@ -1,4 +1,4 @@
-*A PRD (Product Requirements Document) is created before creating a product or feature and includes the planning required for developers to execute effectively. This document is usually prepared by Product Managers, read more [here](https://www.atlassian.com/agile/product-management/requirements)*
+<!-- *A PRD (Product Requirements Document) is created before creating a product or feature and includes the planning required for developers to execute effectively. This document is usually prepared by Product Managers, read more [here](https://www.atlassian.com/agile/product-management/requirements)* -->
 
 # Product Requirements Documentation
 
@@ -44,7 +44,7 @@ You should also include any additional notes on any special headers that may be 
 | /auth/signup | POST | creates new user account returns user JSON | new user info must be included in body |
 | /auth/login | POST | logs in user and returns user JSON with JWT token | username and password must be included in body | -->
 
-``
+
 
 <!-- You can use the [Mermaid Markdown Syntax](https://mermaid-js.github.io/mermaid/#/flowchart) to create a chart of how the parts of your frontend website relate to each other. Units should represent components of your page. The following is an example you may see in a Single Page Application like a React App. -->
 
