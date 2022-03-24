@@ -13,7 +13,7 @@
 
 ## Problem Being Solved and Target Market
 
-There is currently a need for a way that people can ship both themselves and their items to Mars. Our company is Earchs premier Mars shipping service.
+This is a shipping service that will move people and items to Mars with a focus on customer service and accessibility.
 
 ## User Stories
 
