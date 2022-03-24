@@ -44,7 +44,7 @@ You should also include any additional notes on any special headers that may be 
 | /auth/signup | POST | creates new user account returns user JSON | new user info must be included in body |
 | /auth/login | POST | logs in user and returns user JSON with JWT token | username and password must be included in body | -->
 
-## Component Architecture
+``
 
 <!-- You can use the [Mermaid Markdown Syntax](https://mermaid-js.github.io/mermaid/#/flowchart) to create a chart of how the parts of your frontend website relate to each other. Units should represent components of your page. The following is an example you may see in a Single Page Application like a React App. -->
 
@@ -53,10 +53,6 @@ flowchart LR
   App-->Header
   App-->Main
   App-->Footer
-  Main-->Router
-  Router-->Home
-  Router-->Login
-  Router-->Dashboard
 ```
 
 ## User Interface Mockups
