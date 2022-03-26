@@ -8,7 +8,14 @@ This document located in the docs folder should be filled out before starting yo
 
 ## Documenting Challenges and Solutions - Issues
 
-Whenever you run into an issue you should create an issue on your repository (you'll issues in the menu at the top of the screen). Create the issue and make comments as you learn new things to solve the problem. This becomes something that can help you and other users in the future.
+Whenever you run into an issue you should create an issue on your repository (you'll see issues in the menu at the top of the screen). Create the issue and make comments as you learn new things to solve the problem. This becomes something that can help you and other users in the future.
+``` javascript
+let i = Math.floor(Math.random() * 856) //Should the max here be the length value of the array? 
+    //How would I handel an array of unknown length?
+```
+``` jquery
+firstSlide.attr("src",`${firstPic}`) 
+```
 
 ## Other Files in this template
 
