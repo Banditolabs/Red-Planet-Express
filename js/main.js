@@ -36,7 +36,7 @@ const marsPics = $.ajax(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosit
             let $td3 = $("<td>")
             let date = new Date(element.sort_date*1000)
             console.log (date)
-
+            
             $th.text (element.slug)
             $td1.text (date)
             $td2.text (`${element.pad.location.country} - ${element.pad.location.state} `)
@@ -51,3 +51,4 @@ const marsPics = $.ajax(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosit
 ////////////////////////
 // Cost Calculations
 ////////////////////////
+
