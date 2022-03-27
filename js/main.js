@@ -24,36 +24,30 @@ const marsPics = $.ajax(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosit
     scndSlide.attr("src",`${scndPic}`)
     thrdSlide.attr("src",`${thrdPic}`)
     
-    // const launches = 
+    // const launches = {This is from a time when it wasn't nested}
     $.ajax(`https://fdo.rocketlaunch.live/json/launches/next/5`)
     .then((data) => {
         console.log (data)
-        // I need to select the correct cell or row somehow
-        const tableRows = []
-        tableRows.push ($(".launch-row"))
-        // for (let i = 1; i < tableRows.length; i++) {
-        //     tableRows [i] =
-        //   }
-        console.log (tableRows)
-        tableRows.forEach(element => {
-            // element.[0][1].innerText = data.
-        })
-        // These constans need to interpolate the correct index 1-5 based on the current selected row
-        const date = ""
-        const location = ""
-        const time = ""
-        const provider =""
+        for (const element of data.result) {
+            let $tr = $("<tr>")
+            let $th = $("<th>")
+            let $td1 = $("<td>")
+            let $td2 = $("<td>")
+            let $td3 = $("<td>")
+            let date = new Date(element.sort_date*1000)
+            console.log (date)
 
+            $th.text (element.slug)
+            $td1.text (date)
+            $td2.text (`${element.pad.location.country} - ${element.pad.location.state} `)
+            $td3.text (element.provider.name)
+
+            $tr.append($th, $td1, $td2, $td3)
+            $("tbody").append($tr)
+        }
     })
 })
-// const marsWeather = $.ajax(`https://api.nasa.gov/insight_weather/?api_key=${nasaKey}&feedtype=json&ver=1.0`)
-// .then((data) =>{
-//     console.log (data)
-// //     const temp = ""
-// //     const windSpeed = ""
-// //     const B = ""
-// })
-// get next 5 launches
 
-
-
+////////////////////////
+// Cost Calculations
+////////////////////////
