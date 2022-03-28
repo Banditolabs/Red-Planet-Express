@@ -18,7 +18,7 @@
     <!-- Bootstrap: CSS -->
 
 </head>
-<body>
+<body id="body">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div id="navbar" class="container-fluid flex-row-center">
@@ -57,11 +57,11 @@
       </div>
     </nav>
   </header>
-  <main> 
-    
+  <div class="container">
+  <main>  
 <!-- Carousel and Table -->
-    <div class="" id="static-content">
-
+    <div class="row" id="static-content">
+    
       <div id="carousel" class="row">
         <div class="col-12">
         <!-- The image Carousel begins -->
@@ -86,6 +86,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+        </div>
+        </div>
           <!-- The Table begins -->
           <div id="launch-table">
             <table class="table table-striped table-dark container">
@@ -96,54 +98,22 @@
                   <th scope="col">Location</th>
                   <th scope="col">Provider</th>
                 </tr>
-                <!-- <tr class="launch-row">
-                  <th scope="row">1</th>
-                  <td id="date/time1">date 1</td>
-                  <td id="location1">location 1</td>
-                  <td id="provider1">provider 1</td>
-                </tr>
-                <tr class="launch-row">
-                  <th scope="row">2</th>
-                  <td id="date/time2"></td>
-                  <td id="location2"></td>
-                  <td id="provider2"></td>
-
-                </tr>
-                <tr class="launch-row">
-                  <th scope="row">3</th>
-                  <td id="date/time3"></td>
-                  <td id="location3"></td>
-                  <td id="provider3"></td>
-                </tr>
-                <tr class="launch-row">
-                  <th scope="row">4</th>
-                  <td id="date/time4"></td>
-                  <td id="location4"></td>
-                  <td id="provider4"></td>
-                </tr>
-                <tr class="launch-row">
-                  <th scope="row">5</th>
-                  <td id="date/time5"></td>
-                  <td id="location5"></td>
-                  <td id="provider5"></td> -->
-                <!-- </tr> -->
               </tbody>
             </table>
           </div>
           <!-- endOf col -->
         </div>
           <!-- endOf row -->
-      </div>
+      
 
         <!-- endOf container1 -->
-    </div>
+    
 
     <!-- The user inputs shipping details below -->
     <div class="container" id="user-input">
       
-      <form>
-        <h2 id="user-input-heading">Submit your shipping info here</h2>
-        <div class="row shipping-row">
+      <!-- <form id=""input-form> -->
+        <!-- <div class="row shipping-info">
           <div class="col">
             <input type="text" class="form-control" placeholder="City">
           </div>
@@ -153,29 +123,174 @@
           <div class="col">
             <input type="text" class="form-control" placeholder="Zip">
           </div>
+        </div> -->
+        <!-- <div class="row package-info">
+          <div class="col">
+            <input type="text" class="form-control input" placeholder="Weight (lbs)">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control input" placeholder="Length (in)">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control input" placeholder="Width (in)">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control input" placeholder="Height (in)">
+          </div>
         </div>
-        <div class="row package-row">
+      </form> -->
+         
+        <section class="bg-light">
+            <div class="container">
+              <div class="text-center">
+                <h2>Your Quote</h2>
+                <h6>Sumbit your order details</h6>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+      <form id=""input-form>          
+        <div class="row launch-selection">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+          </select>
+        </div>
+        <div class="row package-info">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Weight (lbs)">
+            <input type="text" class="form-control input" placeholder="Weight (lbs)">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Length (in)">
+            <input type="text" class="form-control input" placeholder="Length (in)">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Width (in)">
+            <input type="text" class="form-control input" placeholder="Width (in)">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Height (in)">
+            <input type="text" class="form-control input" placeholder="Height (in)">
           </div>
         </div>
       </form>
+                  <button id="submit-btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Modal Activate!
+                  </button>
+                </div>
+                <!-- <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-4">.col-md-4</div>
+                        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-9">
+                          Level 1: .col-sm-9
+                          <div class="row">
+                            <div class="col-8 col-sm-6">
+                              Level 2: .col-8 .col-sm-6
+                            </div>
+                            <div class="col-4 col-sm-6">
+                              Level 2: .col-4 .col-sm-6
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div> -->
+              </div>
+            </div>
+          </section>
+
+        
+      
     </div>
 
-  </main> 
-  <footer>
-
-  </footer>  
+  </main>
+  </div> 
+  
    <!--Bootstrap:  JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- This is the Quote -->
+  <div class="modal" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title"></h5>
+          <button id="close-modal" class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+              <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                Level 1: .col-sm-9
+                <div class="row">
+                  <div class="col-8 col-sm-6">
+                    Level 2: .col-8 .col-sm-6
+                  </div>
+                  <div class="col-4 col-sm-6">
+                    Level 2: .col-4 .col-sm-6
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- This is the old form -->
+  <!-- <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          Level 1: .col-sm-9
+          <div class="row">
+            <div class="col-8 col-sm-6">
+              Level 2: .col-8 .col-sm-6
+            </div>
+            <div class="col-4 col-sm-6">
+              Level 2: .col-4 .col-sm-6
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+   <!--Bootstrap:  JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

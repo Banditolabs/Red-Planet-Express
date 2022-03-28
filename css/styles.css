@@ -9,3 +9,11 @@
 #navbar{
     flex-direction: row;
 }
+
+.btn {
+    margin: 10px;
+}
+
+#body {
+    background-color: rgb(46, 45, 45);
+}
