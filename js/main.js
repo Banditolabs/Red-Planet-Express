@@ -58,16 +58,30 @@ let $input = $(".input")
 $('#submit-btn').on('click', calculate)
 
 // Max diameter is  (5.2 m, 17.2 ft)
-// Max 
+// Max height is 230
+// Max weight is 18,300 lb
 function calculate() {
     $input.each(function (){
         packageStats.push($(this).val()) 
     })
-    for (let i = 0; i < packageStats.length; i++) {
-        let weight = packageStats [0]
-        let length = packageStats [1]
-        let width = packageStats [2]
-        let height = packageStats [3]
+    let weight = packageStats [0]
+    let length = packageStats [1]
+    let width = packageStats [2]
+    let height = packageStats [3]
+    let price = weight *30000
+    if (length||width|| > 12) {
+        alert ("Length and Width must be under 12 ft")
+    }
+    if (height > 230) {
+        alert ("Height must be under 230 ft")
+    }
+    if (weight > 18,300) {
+        alert ("Weight must be under 18,300")
+    }
+    else {
+      $("#height").text(`Height: ${height}`)
+      $("#length").text(`Length: ${length}`)
+      $("#width").text(`Width: ${width}`)  
     }
     console.log (packageStats)
 
