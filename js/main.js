@@ -55,24 +55,28 @@ console.log("new")
 let packageStats = []
 let $input = $(".input")
 
+$('#submit-btn').on('click', calculate)
+
+// Max diameter is  (5.2 m, 17.2 ft)
+// Max 
+function calculate() {
+    $input.each(function (){
+        packageStats.push($(this).val()) 
+    })
+    for (let i = 0; i < packageStats.length; i++) {
+        let weight = packageStats [0]
+        let length = packageStats [1]
+        let width = packageStats [2]
+        let height = packageStats [3]
+    }
+    console.log (packageStats)
+
+}
+
 $('#close-modal').on('click', function (){
     console.log ("wow")
     packageStats = []
-    
 }) 
-
-function calculate() {
-    $input.each(function (){
-        packageStats.push($(this).val())
-        console.log ("click")
-        console.log (packageStats)     
-    })
-    console.log ("Wee")
-}
-
-$('#submit-btn').on('click', calculate)
-let $button = $('button').text()
-console.log ($button)
 
         
         // let myModal = $('#modal-body')
