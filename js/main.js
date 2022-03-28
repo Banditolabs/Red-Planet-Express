@@ -36,7 +36,6 @@ const launchList = $.ajax(`https://fdo.rocketlaunch.live/json/launches/next/5`)
             let $td3 = $("<td>")
             let date = new Date(element.sort_date*1000) // I want to get rid of some this extra date info
             let $launch = $("<option>")
-
             // `${element.slug} ${date} ${element.pad.location.country}, ${element.pad.location.state} ${element.provider.name}`
 
             $th.text (element.slug)
@@ -64,25 +63,29 @@ function calculate() {
     $input.each(function (){
         packageStats.push($(this).val()) 
     })
-    let weight = packageStats [0]
-    let length = packageStats [1]
-    let width = packageStats [2]
-    let height = packageStats [3]
-    let price = weight *30000
-    if (length||width|| > 12) {
-        alert ("Length and Width must be under 12 ft")
-    }
-    if (height > 230) {
-        alert ("Height must be under 230 ft")
-    }
-    if (weight > 18,300) {
-        alert ("Weight must be under 18,300")
-    }
-    else {
+    let weight = parseInt(packageStats [0])
+    let length = parseInt(packageStats [1])
+    let width = parseInt(packageStats [2])
+    let height = parseInt(packageStats [3])
+    let price = parseInt(weight) *30000
+    let launch = $("#launch-select option:selected").text()
+    // if (length||width > 12) {
+    //     console.log (length)
+    // }
+    // if (height > 230) {
+    //     alert ("Height must be under 230 ft")
+    // }
+    // if (weight > 18,300) {
+    //     alert ("Weight must be under 18,300")
+    // }
+    // else { }
       $("#height").text(`Height: ${height}`)
       $("#length").text(`Length: ${length}`)
-      $("#width").text(`Width: ${width}`)  
-    }
+      $("#width").text(`Width: ${width}`)
+      $("#weight").text(`Weight: ${weight}`)
+      $("#price").text(`Shipping cost: $${price}`)
+      $("#launch").text (`${launch}`)
+      console.log (launch)
     console.log (packageStats)
 
 }
