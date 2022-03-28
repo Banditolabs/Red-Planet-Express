@@ -58,7 +58,7 @@
     </nav>
   </header>
   <div class="container">
-  <main>  
+    <main>  
 <!-- Carousel and Table -->
     <div class="row" id="static-content">
     
@@ -106,73 +106,43 @@
     
     <!-- The user inputs shipping details below -->
     <div class="container" id="user-input">
-      
-      <!-- <form id=""input-form>
-         <div class="row shipping-info">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="City">
+      <section class="bg-light">
+        <div class="container">
+          <div class="text-center">
+            <h2>Your Quote</h2>
+            <h6>Sumbit your order details</h6>
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="State">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Zip">
-          </div>
-        </div> 
-         <div class="row package-info">
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Weight (lbs)">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Length (in)">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Width (in)">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Height (in)">
-          </div>
-        </div>
-      </form>  -->
-         
-        <section class="bg-light">
-            <div class="container">
-              <div class="text-center">
-                <h2>Your Quote</h2>
-                <h6>Sumbit your order details</h6>
-              </div>
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-      <form id=""input-form>          
-        <div class="row launch-selection">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-          </select>
-        </div>
-        <div class="row package-info">
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Weight (lbs)">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Length (in)">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Width (in)">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control input" placeholder="Height (in)">
-          </div>
-        </div>
-      </form>
-                  <button id="submit-btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Modal Activate!
-                  </button>
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <form id="input-form"> 
+                <!-- Launch Selection -->
+                <div class="row launch-selection">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                  </select>
                 </div>
-              </div>
+                <!-- Cargo Dimensions -->
+                <div class="row package-info">
+                  <div class="col">
+                    <input type="text" class="form-control input" placeholder="Weight (lbs)">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control input" placeholder="Length (in)">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control input" placeholder="Width (in)">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control input" placeholder="Height (in)">
+                  </div>
+                </div>
+              </form>
+              <button id="submit-btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal" >Modal Activate!
+              </button>
             </div>
-          </section>
-
-        
-      
+          </div>
+        </div>
+      </section> 
     </div>
 
   </main>

@@ -49,25 +49,32 @@ const launchList = $.ajax(`https://fdo.rocketlaunch.live/json/launches/next/5`)
             $("tbody").append($tr)
             $("select").append($launch)
             $('#close-modal').on('click', function (){
+                console.log ("wow")
                 packageStats = []
                 
             }) 
         }
     
     })
-    let packageStats = []
+console.log("new")
+
+    // let packageStats = []
+    function calculate() {
+        console.log ("Wee")
+    }
+
+   $('button').on('click', calculate)
+        // $(".input").each(function (){
+        //     packageStats.push($(this).val())
+        //     console.log ("click")
+        //     console.log (packageStats)     
+        // })
+        // let myModal = $('#modal-body')
+        // $(document).on('shown.bs.modal', '#modal-body', function () {
+        //     myModal.focus()
+        // } )
     
-   let $modalSubmit =  $('#submit-btn').on('click', function (){
-        $(".input").each(function (){
-            packageStats.push($(this).val())
-            console.log ("click")     
-        })
-        let myModal = $('#modal-body')
-        $(document).on('shown.bs.modal', '#modal-body', function () {
-            myModal.focus()
-        } )
-    })
-    console.log ($modalSubmit)
+    
 
 
 ////////////////////////
