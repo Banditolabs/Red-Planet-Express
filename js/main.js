@@ -1,7 +1,6 @@
 
 // create a variable for things you intend to use alot
 const nasaKey = "32ndWDdG9R2YQKYRUdErh6vj6S19DHAnxBAdNed6"
-let packageStats = []
 
 //get random picture
 const marsPics = $.ajax(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${nasaKey}`)
@@ -54,25 +53,21 @@ const launchList = $.ajax(`https://fdo.rocketlaunch.live/json/launches/next/5`)
                 
             }) 
         }
-    })
     
+    })
+    let packageStats = []
     
    let $modalSubmit =  $('#submit-btn').on('click', function (){
         $(".input").each(function (){
             packageStats.push($(this).val())
-            console.log (packageStats)
-            
+            console.log ("click")     
         })
-       
-
         let myModal = $('#modal-body')
         $(document).on('shown.bs.modal', '#modal-body', function () {
             myModal.focus()
         } )
     })
-    console.log(packageStats)
-
-
+    console.log ($modalSubmit)
 
 
 ////////////////////////
