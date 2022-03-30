@@ -29,7 +29,7 @@ const launchList = $.ajax(`https://fdo.rocketlaunch.live/json/launches/next/5`)
     .then((data) => {
         console.log (data)
         for (const element of data.result) {
-            let $tr = $("<tr>")
+            let $tr = $("<tr>", {"class":"text-center"})
             let $th = $("<th>")
             let $td1 = $("<td>")
             let $td2 = $("<td>")
@@ -59,6 +59,7 @@ $('#submit-btn').on('click', calculate)
 // Max diameter is  (5.2 m, 17.2 ft)
 // Max height is 230
 // Max weight is 18,300 lb
+
 function calculate() {
     $input.each(function (){
         packageStats.push($(this).val()) 
@@ -82,7 +83,7 @@ function calculate() {
       $("#height").text(`Height: ${height}`)
       $("#length").text(`Length: ${length}`)
       $("#width").text(`Width: ${width}`)
-      $("#weight").text(`Weight: ${weight}`)
+      $("#weight").text(`Cargo weight: ${weight}`)
       $("#price").text(`Shipping cost: $${price}`)
       $("#launch").text (`${launch}`)
       console.log (launch)

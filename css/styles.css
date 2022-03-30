@@ -17,3 +17,25 @@
 #body {
     background-color: rgb(46, 45, 45);
 }
+
+#inner-carousel {
+    position: relative;
+}
+
+#table-edge {
+    z-index:9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#center-table {
+    position: relative;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#test-id{
+    z-index: 100;
+}
