@@ -95,13 +95,6 @@ $('#close-modal').on('click', function (){
     console.log ("wow")
     packageStats = []
 }) 
-
-        
-        // let myModal = $('#modal-body')
-        // $(document).on('shown.bs.modal', '#modal-body', function () {
-        //     myModal.focus()
-        // } )
-    
     
 
 
@@ -119,19 +112,3 @@ $('#close-modal').on('click', function (){
 // They will click a button to submit
 // An Invoice appears with the total cost and the details of their chosen launch.
 // Ideally the invoice will appear as a popup overlay over the page. Hitting the "x" on that popup clears the fields and allows for new quote
-
-
-
-// document.getElementById("submit").addEventListener("click", handler9);
-
-// function handler9(e) {
-//     let vocabEnglish = [];
-//     let englishWords = document.getElementsByClassName("englishWord");
-
-//     for (let i = 0; i < englishWords.length; i++) {
-//         let englishWord = englishWords[i].value;
-//         vocabEnglish.push(englishWord); 
-//     }
-//     console.log(vocabEnglish);
-//     e.preventDefault()
-// }
