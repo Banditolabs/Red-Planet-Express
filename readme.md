@@ -46,4 +46,4 @@ Set your terminal to the top of this repo (the folder this readme.md is in) and 
 - Current weather for all the launch locations being pulled
 - Validation checks on the package dimensions
 - Reduce the data being pulled for the "date" of the launch table
-- 
+- Calendar event integration so that people can book the flight into their Apple and Google calendar.
