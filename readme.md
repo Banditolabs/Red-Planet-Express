@@ -37,16 +37,9 @@ Make sure the package.json is at the top of this repo and that the start script 
 
 Set your terminal to the top of this repo (the folder this readme.md is in) and run `npx create-react-app@latest .` which will generate a react app in this folder.
 
-## Deployment
-
-- [Video: Deploy Frontend website to Netlify, Github Pages, Surge, and Heroku](https://www.youtube.com/watch?v=HCDCrjQsEhg)
-- [Video: Deploy Frontend to Vercel, AWS Amplify, Firebase, Azure Static](https://www.youtube.com/watch?v=2FVY_lm-mTY)
-- [Video: Deploy Frontend website to Render](https://www.youtube.com/watch?v=bB7I-MeI6sY)
-- [Video: Deploying NodeJS (Express/Fastify/Koa) to Heroku](https://www.youtube.com/watch?v=hjlAhda-5B4)
-- [Blog: Ultimate Guide to deploying nodejs apps to Heroku](https://tuts.alexmercedcoder.com/2021/4/deploying_node_heroku/)
-- [Video: Deploying a React App to Netlify](https://www.youtube.com/watch?v=XwOUYUBCaoI)
-- [Video: Deploying Python Django to Heroku](https://www.youtube.com/watch?v=Qi2q3c9BNww)
-- [Video: Deploying Ruby on Rails to Heroku](https://www.youtube.com/watch?v=n9V_1X8uGZM)
+## Getting started
+(https://banditolabs.github.io/Red-Planet-Express/)
+(https://github.com/Banditolabs/Red-Planet-Express)
 
 ## CORS Issues
 
