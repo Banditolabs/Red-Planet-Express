@@ -41,8 +41,9 @@ Set your terminal to the top of this repo (the folder this readme.md is in) and 
 (https://banditolabs.github.io/Red-Planet-Express/)
 (https://github.com/Banditolabs/Red-Planet-Express)
 
-## CORS Issues
+## Future Enhancements
 
-- [Overcoming CORS Issues with Severless Functions](https://www.youtube.com/watch?v=wCO4ZLJEDB8)
-- [Understanding and Solving Cors](https://www.youtube.com/watch?v=fsMKB7PJoFY)
-- [Making A Proxy Server to Overcome Cors](https://www.youtube.com/watch?v=5CFafWpWwxo)
+- Current weather for all the launch locations being pulled
+- Validation checks on the package dimensions
+- Reduce the data being pulled for the "date" of the launch table
+- 
