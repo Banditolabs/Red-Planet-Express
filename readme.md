@@ -13,37 +13,21 @@ let i = Math.floor(Math.random() * 856) //Should the max here be the length valu
 firstSlide.attr("src",`${firstPic}`) 
 ```
 
-## Other Files in this template
+## Technologies Used
 
-- Procfile: this file is deployment to Heroku, it tells heroku what command to run to start your application. Usally something like:
+*Javascript
+*CSS
+*HTML
+*Bootstrap
+*Jquery
 
-```
-web: npm start
-```
 
-- vercel.json: custom settings for deploying frontend applications to vercel, if deploying a react app using react-router put this in the vercel.json so refershing the deployed page does break things.
+## Screenshots
 
-```
-{
-  "version": 2,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
-  ]
-}
-```
+![Carousel and Table](assets/Red_Planet_Express.png?raw=true)
+![Quote](assets/Red_Planet_Express-2.png?raw=true)
+![Modal](assets/Red_Planet_Express-3.png)
 
-- netlify.toml: custom settings deploying a frontend application to netlify, if deploying a react app using react router put this in the netlify.toml
-
-```
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-```
-
-## Making a normal html/css/js app
-
-Just make sude index.html is at the top level of the repo (in the same folder as this readme.md file)
 
 ## Making a Backend Node app (expres/koa/fastify)
 
