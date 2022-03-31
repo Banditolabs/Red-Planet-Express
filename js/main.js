@@ -10,8 +10,6 @@ const marsPics = $.ajax(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosit
     let img1 = Math.floor(Math.random() * 100)
     let img2 = Math.floor(Math.random() * 100)
     let img3 = Math.floor(Math.random() * 100) 
-        //Should the max here be the length value of the array? 
-        //How would I handel an array of unknown length?
     let firstPic = data.photos[img1].img_src
     let scndPic = data.photos[img2].img_src
     let thrdPic = data.photos[img3].img_src
@@ -36,7 +34,6 @@ const launchList = $.ajax(`https://fdo.rocketlaunch.live/json/launches/next/5`)
             let $td3 = $("<td>")
             let date = new Date(element.sort_date*1000) // I want to get rid of some this extra date info
             let $launch = $("<option>")
-            // `${element.slug} ${date} ${element.pad.location.country}, ${element.pad.location.state} ${element.provider.name}`
 
             $th.text (element.slug)
             $td1.text (date)
@@ -80,13 +77,13 @@ function calculate() {
     //     alert ("Weight must be under 18,300")
     // }
     // else { }
-      $("#height").text(`Height: ${height}`)
-      $("#length").text(`Length: ${length}`)
-      $("#width").text(`Width: ${width}`)
-      $("#weight").text(`Cargo weight: ${weight}`)
-      $("#price").text(`Shipping cost: $${price}`)
-      $("#launch").text (`${launch}`)
-      console.log (launch)
+        $("#height").text(`Height: ${height}`)
+        $("#length").text(`Length: ${length}`)
+        $("#width").text(`Width: ${width}`)
+        $("#weight").text(`Cargo weight: ${weight}`)
+        $("#price").text(`Shipping cost: $${price}`)
+        $("#launch").text (`${launch}`)
+    console.log (launch)
     console.log (packageStats)
 
 }
@@ -94,21 +91,4 @@ function calculate() {
 $('#close-modal').on('click', function (){
     console.log ("wow")
     packageStats = []
-}) 
-    
-
-
-////////////////////////
-// Customer quote
-////////////////////////
-
-// It costs $30,000 dollars/LB to Mars
-// 12,100 lb maximum shipping limit
-// Maximum cargo dimensions are 43 ft X 17.1 ft
-
-
-// The user will enter the dimensions of their cargo and it's weight
-// The users selects the Launch they want
-// They will click a button to submit
-// An Invoice appears with the total cost and the details of their chosen launch.
-// Ideally the invoice will appear as a popup overlay over the page. Hitting the "x" on that popup clears the fields and allows for new quote
+})
